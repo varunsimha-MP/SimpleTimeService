@@ -282,7 +282,7 @@ This project delivers:
 To avoid AWS charges:
 
 ```
-terraform destroy -var-file="test.tfvars"
+terraform destroy -var-file="dev-environment.tfvars"
 ```
 
 ---
