@@ -10,7 +10,7 @@ permissions:
   contents: read
   id-token: write
 
-  
+
 # JOB
 jobs:
   terraform-cd:
@@ -57,3 +57,5 @@ jobs:
       - name: Terraform Apply
         run: terraform apply -auto-approve tfplan
         working-directory: Terraform
+
+        
