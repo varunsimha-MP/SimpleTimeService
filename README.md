@@ -1,4 +1,4 @@
-# DevOps Project Presentation — SimpleTimeService
+# DevOps Project — SimpleTimeService
 
 ---
 
