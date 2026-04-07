@@ -44,7 +44,7 @@ jobs:
 
       # PLAN (SAVE)
       - name: Terraform Plan
-        run: terraform plan -var-file="test.tfvars" -out=tfplan
+        run: terraform plan -var-file="dev-environment.tfvars" -out=tfplan
         working-directory: Terraform
 
       # Upload tfplan to S3
