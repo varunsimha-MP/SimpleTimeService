@@ -28,7 +28,8 @@ Tools Required:
 
 "ECS needs public access to pull the Docker image.”
 
-GitHub Actions Setup (IMPORTANT)
+
+* GitHub Actions Setup (IMPORTANT)
 1. Configure GitHub Secrets
 
 Go to:
