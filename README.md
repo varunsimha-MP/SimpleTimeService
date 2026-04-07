@@ -15,14 +15,16 @@ The application is a simple API that returns the current timestamp and client IP
 Before running this project, some initial setup is required.
 
 Tools Required:
-Terraform
-Docker
+Terraform,
+Docker,
 Git
 
 “These tools are required to build, deploy, and manage the infrastructure.”
 
 Docker Setup
+
 Create DockerHub account
+
 Ensure image repository is public
 
 "ECS needs public access to pull the Docker image.”
@@ -36,8 +38,11 @@ GitHub → Repository → Settings → Secrets
 Add:
 
 DOCKER_USERNAME
+
 DOCKER_PASSWORD
+
 OIDC (IAM Role ARN)
+
 region
 
 “Secrets are used to securely authenticate without hardcoding credentials.”
