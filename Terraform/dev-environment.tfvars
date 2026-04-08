@@ -12,6 +12,8 @@ ig = {
   Name = "simple-igw"
 }
 
+nat = "NAT Gateway"
+
 
 # PUBLIC SUBNETS
 pub_count      = 2

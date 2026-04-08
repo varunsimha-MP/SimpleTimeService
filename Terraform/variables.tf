@@ -18,6 +18,10 @@ variable "ig" {
   
 }
 
+variable "nat" {
+  type = string
+}
+
 variable "pub_count" {
   type = number
 }
