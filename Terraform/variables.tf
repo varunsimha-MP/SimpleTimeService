@@ -60,10 +60,6 @@ variable "alb_name" {
     type = string
 }
 
-variable "public_subnets" {
-    type = list(string)
-}
-
 variable "alb_sg_name" {
     type = string
 }
@@ -110,10 +106,6 @@ variable "docker_image" {
 
 variable "service_name" {
   type = string
-}
-
-variable "private_subnets" {
-    type = list(string)
 }
 
 variable "srv_sg_name" {
