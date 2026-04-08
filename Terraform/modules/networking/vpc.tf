@@ -63,15 +63,16 @@ resource "aws_nat_gateway" "app_nat" {
     allocation_id = aws_eip.nat[count.index].id
     subnet_id = aws_subnet.pub_subnet[count.index].id
     tags = {
-    Name = "natgatway-${count.index}"
+    Name = "${var.nat}-${count.index}"
   }
 }
 
 resource "aws_route_table" "pri_rt" {
+    count = var.pri_count
     vpc_id = aws_vpc.core_network.id
     route {
         cidr_block = "0.0.0.0/0"
-        nat_gateway_id = aws_nat_gateway.app_nat[0].id
+        nat_gateway_id = aws_nat_gateway.app_nat[count.index].id
     }
     tags = var.pri_rt
 }
