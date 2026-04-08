@@ -11,7 +11,7 @@ resource "aws_vpc" "core_network" {
 resource "aws_subnet" "pub_subnet" {
     count = var.pub_count
     vpc_id = aws_vpc.core_network.id
-    map_customer_owned_ip_on_launch = true
+    map_public_ip_on_launch = true
     availability_zone = local.azs[count.index]
     cidr_block = var.pub_cidr_block[count.index]
     tags = {
