@@ -43,10 +43,6 @@ jobs:
         run: terraform init
         working-directory: Terraform
 
-      - name: Terraform Init
-        run: terraform providers
-        working-directory: Terraform
-
       # PLAN (SAVE)
       - name: Terraform Plan
         run: terraform plan -var-file="dev-environment.tfvars" -out=tfplan
