@@ -30,7 +30,7 @@ variable "certificate_arn" {
   type = string
 }
 
-variable "alb_egress" {
+variable "alb_ingress" {
   type = map(object({
     description = string
     cidr_block = list(string)

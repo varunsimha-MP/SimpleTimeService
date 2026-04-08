@@ -59,14 +59,14 @@ resource "aws_security_group" "alb_sg" {
     name = var.alb_sg_name
     description = var.alb_sg_description
     vpc_id = var.core_network
-    dynamic "egress" {
-        for_each = var.alb_egress
+    dynamic "ingress" {
+        for_each = var.alb_ingress
         content {
-          description = egress.value.description
-          protocol = egress.value.protocol
-          cidr_blocks = egress.value.cidr_block
-          to_port = egress.value.port
-          from_port = egress.value.port
+          description = ingress.value.description
+          protocol = ingress.value.protocol
+          cidr_blocks = ingress.value.cidr_block
+          to_port = ingress.value.port
+          from_port = ingress.value.port
         }
     }
     tags = var.alb_sg

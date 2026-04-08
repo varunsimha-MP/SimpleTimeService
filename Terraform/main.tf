@@ -51,7 +51,7 @@ module "alb" {
     alb_sg_description = var.alb_sg_description
     alb_sg_name = var.alb_sg_name
     alb_sg = var.alb_sg
-    alb_egress = var.alb_egress  
+    alb_ingress = var.alb_ingress 
 }
 
 # ECS APPLICATION
