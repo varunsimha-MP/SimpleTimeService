@@ -1,3 +1,3 @@
 locals {
-  azs = data.availability_zones.azs.names
+  azs = data.aws_availability_zones.azs.names
 }
