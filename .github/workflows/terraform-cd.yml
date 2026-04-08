@@ -40,6 +40,10 @@ jobs:
 
       # INIT
       - name: Terraform Init
+        run: terraform init
+        working-directory: Terraform
+
+      - name: Terraform Init
         run: terraform providers
         working-directory: Terraform
 
@@ -57,3 +61,4 @@ jobs:
       - name: Terraform Apply
         run: terraform apply -auto-approve tfplan
         working-directory: Terraform
+        
