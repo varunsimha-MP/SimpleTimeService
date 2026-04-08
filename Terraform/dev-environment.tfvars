@@ -41,7 +41,7 @@ domain_name = "simha.in.net"
 
 # ALB CONFIG
 
-alb_name = "app_alb"
+alb_name = "app-alb"
 
 alb_sg_name        = "alb-sg"
 alb_sg_description = "ALB Security Group"
