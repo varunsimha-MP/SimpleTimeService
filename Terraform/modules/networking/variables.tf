@@ -43,3 +43,7 @@ variable "pri_cidr_block" {
 variable "pri_rt" {
   type = map(string)
 }
+
+variable "nat" {
+  type = string
+}
