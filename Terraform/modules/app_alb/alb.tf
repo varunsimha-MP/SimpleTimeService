@@ -21,6 +21,13 @@ resource "aws_lb_target_group" "app" {
   }
 }
 
+## ALB TARGET GROUP ATTACHMENT (handled via ECS service definition)
+#resource "aws_alb_target_group_attachment" "ec2" {
+#  target_group_arn = aws_lb_target_group.app.arn
+#  target_id = aws_ecs_service.app.id
+#  port = 8080
+#}
+
 # HTTP → HTTPS REDIRECT
 resource "aws_lb_listener" "http" {
   load_balancer_arn = aws_lb.app.arn
